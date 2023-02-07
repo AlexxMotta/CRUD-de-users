@@ -32,7 +32,12 @@ public class UserController {
 
     @GetMapping("/listMoreThan/{id}")
     public List<User> listMoreThan(@PathVariable("id") Long id){
-        return this.userRepository.findAllMoreThan(id);
+        return this.userRepository.findByIdGreaterThan(id);
+    }
+
+    @GetMapping("/name/{name}")
+    public User findUserByName(@PathVariable("name") String name){
+        return this.userRepository.findByName(name);
     }
 
 }
