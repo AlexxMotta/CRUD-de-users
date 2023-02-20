@@ -1,2 +1,2 @@
 # Project-Dani
-## CRUD Simples de Produtos usando Java/Spring.
+## CRUD simples de usuarios usando Java/Spring.
